@@ -1,0 +1,565 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+
+:root {
+  /* Color */
+  --body-color: #fefefe;
+  --container-color: #d8effd;
+  --container-color-light: #f4f5fa;
+  --container-color-deep: #62caff;
+  --title-color: #333333;
+  --text-color: #0e133a;
+  --text-color-light: #ffffff;
+  --primary-color: #fc9a37;
+  --primary-color-light: #ec8f31;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: left;
+  background-color: var(--body-color);
+  font-weight: 400;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/*--------------------
+ TYPOGRAPHY
+-----------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 0.5rem;
+  color: var(--title-color);
+}
+
+.h1,
+h1 {
+  font-size: 2.125rem;
+  line-height: 40px;
+}
+
+.h2,
+h2 {
+  font-size: 1.625rem;
+  color: var(--title-color);
+}
+
+.h3,
+h3 {
+  font-size: 1.375rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.125rem;
+}
+
+.h5,
+h5 {
+  font-size: 0.9375rem;
+}
+
+.h6,
+h6 {
+  font-size: 0.75rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.section-subtitle {
+  color: var(--primary-color);
+  display: block;
+}
+
+/*=============== THEME ===============*/
+
+/*========== Variables Dark theme ==========*/
+
+/*=============== HEADER & NAV===============*/
+.header {
+  background-color: var(--container-color-light);
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.nav-container ul li {
+  margin-right: 50px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Lato" !important;
+  line-height: 32px;
+  font-style: normal;
+}
+.nav-container ul li .web {
+  width: 18px;
+  color: #0e133a;
+}
+.nav-container ul li .arrow {
+  width: 8px;
+  color: #0e133a;
+}
+.nav-sub-container {
+  position: relative;
+}
+.ellipse-img {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+.polygon-img {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.banner {
+  padding-top: 100px;
+  padding-left: 275px;
+  display: flex;
+  width: 100%;
+}
+.banner .banner-info {
+  width: 650px;
+}
+.banner .banner-img {
+  width: 650px;
+}
+.banner h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 80px;
+  color: var(--text-color);
+}
+.banner h4 {
+  font-family: "Lato";
+}
+.banner .introducing {
+  color: var(--text-color);
+}
+.banner .aka {
+  color: #1f33d8;
+}
+.banner .coin {
+  color: #ffcd37;
+}
+.banner p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5b5d6d;
+}
+.banner .banner-btn {
+  padding-bottom: 80px;
+}
+.banner .btn-1 {
+  padding: 16px 56px;
+  background: #1f33d8;
+  border-radius: 38px;
+
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ffffff;
+}
+.banner .btn-2 {
+  padding: 16px 56px;
+  gap: 8px;
+  background: #ffffff;
+  border-radius: 38px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0e133a;
+}
+.banner .banner-img {
+  position: relative;
+  text-align: center;
+}
+.banner .banner-img .plant-bitcoin {
+  width: 500px;
+}
+.banner .banner-img .bitcoin1 {
+  width: 116px;
+  position: absolute;
+  top: -75px;
+}
+.banner .banner-img .bitcoin2 {
+  width: 110px;
+  position: absolute;
+  top: 280px;
+  left: -71px;
+}
+.banner .banner-img .bitcoin3 {
+  width: 112px;
+  position: absolute;
+  left: 385px;
+  top: -80px;
+}
+.banner .banner-img .bitcoin4 {
+  width: 112px;
+  position: absolute;
+  bottom: 120px;
+  left: 380px;
+}
+.banner .banner-img .bitcoin5 {
+  position: absolute;
+  right: -340px;
+  bottom: 100px;
+}
+/* Active link */
+
+/* Change background header */
+
+/*=============== aka-coin Section ===============*/
+
+.aka-coin h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #0e133a;
+  text-align: center;
+}
+.aka-coin .aka-coin-content {
+  padding-left: 275px;
+  padding-top: 70px;
+}
+.aka-coin .aka-coin-content .part1 h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #0e133a;
+  text-align: justify;
+}
+.aka-coin .aka-coin-content .card1 {
+  width: 400px;
+  height: 350px;
+  background: url(../images/Website.png);
+  background-color: #ffcd37;
+  border-radius: 10px;
+  background-position: center;
+  background-size: contain;
+  margin-top: 50px;
+  background-repeat: no-repeat;
+}
+.aka-coin .aka-coin-content .part2 p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5b5d6d;
+}
+
+.aka-coin .aka-coin-content .part2 h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #1f33d8;
+}
+
+.aka-coin .aka-coin-content .part2 img {
+  width: 15px;
+}
+.aka-coin .aka-coin-content .card2 img {
+  width: 750px;
+  height: 350px;
+  margin-top: 45px;
+  border-radius: 10px;
+}
+.wallet h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  color: #0e133a;
+  text-align: center;
+}
+.wallet .card1 {
+  width: 373px;
+  height: 462px;
+  background: #1f33d8 !important;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.wallet .card1 .card-img-container .card-left-img .polygon_test1 {
+  margin: 50px 0 0 50px;
+}
+.wallet .card1 .card-img-container .card-left-img {
+  position: relative;
+}
+.wallet .card1 .card-img-container .card-left-img .polygon_test2 {
+  position: absolute;
+  top: 60px;
+  left: 59px;
+}
+
+.wallet .card1 .card-img-container .card-right-img {
+  width: 147px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 45px 0 0 30px;
+  z-index: 1000;
+}
+.wallet .wallet-card1-polygon1 {
+  width: 200px;
+  height: 100px;
+  background-color: #0c20cb;
+  border-radius: 50px;
+  position: absolute;
+  right: -52px;
+}
+.wallet .card1 .card-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: justify;
+  width: 300px;
+  margin: auto;
+  padding-top: 15px;
+}
+.wallet .card1 .icon-img {
+  padding-top: 15px;
+}
+.wallet .card1 .icon-img img {
+  margin-left: 20px;
+}
+.wallet .wallet-card1-polygon2 {
+  width: 150px;
+  height: 80px;
+  background-color: #0c20cb;
+  border-radius: 50px;
+  position: absolute;
+  right: -52px;
+}
+
+.wallet .wallet-card1-polygon3 {
+  width: 350px;
+  height: 60px;
+  background-color: #0c20cb;
+  border-radius: 50px;
+  position: absolute;
+  left: -150px;
+  top: 360px;
+}
+.wallet .wallet-card1-polygon3 h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin: 15px 0 0 120px;
+  color: #ffffff;
+}
+.wallet .wallet-card1-polygon3 .white-arrow {
+  width: 20px;
+  height: 0px;
+  z-index: 9999;
+}
+.wallet .card2 {
+  width: 373px;
+  height: 462px;
+  background: #ffd456 !important;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card2 .wallet-card2-polygon2 {
+  background-color: #eebc28 !important;
+}
+.card2 .wallet-card2-polygon3 {
+  background-color: #eebc28 !important;
+}
+
+/*=============== Quick Start Section ===============*/
+.wallet-container {
+  margin-top: 100px;
+}
+.quick .quick-start {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #0e133a;
+}
+.quick .create-wallet {
+  background-color: #ffd456;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.quick .wallet-create-text1 h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  color: #0e133a;
+}
+.quick .wallet-create-text1 p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #5b5d6d;
+}
+.create-wallet-img1 {
+  background: url(../images/Wallet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.create-wallet-img2 {
+  background: url(../images/Hand\ Hold\ Bitcoin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.create-wallet-img3 {
+  background: url(../images/Laptop.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.create-wallet-img4 {
+  background: url(../images/Machine.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*=============== Client card Section ===============*/
+.client-card-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #0e133a;
+  text-align: justify;
+  width: 300px;
+  margin: auto;
+}
+.replace-img-polygon2 {
+  z-index: -999 !important;
+}
+.replace-img {
+  margin-top: 5px;
+  z-index: 10000;
+}
+/*=============== Counter Section ===============*/
+.counter .counter-container {
+  height: 174px;
+  background: #1f33d8;
+}
+.counter .counter-container-border-bottom {
+  height: 11px;
+  background: #ffd456;
+}
+.counter .counter-row {
+  padding-top: 40px;
+}
+.counter .counter-text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: 48px;
+  color: #ffffff;
+}
+
+/* Swiper class */
+
+/*=============== Footer Section ===============*/
+
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
